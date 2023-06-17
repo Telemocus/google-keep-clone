@@ -35,6 +35,7 @@
     padding: 5px;
     border-radius:5px;
     visibility: hidden;
+    z-index: 1;
 }
 .tooltip:hover .tooltip-text{
     visibility: visible ;
@@ -46,8 +47,7 @@
     align-items: center;
     height: 64px;
     padding: 8px;
-    border-bottom: 1px solid gainsboro
-    ;
+    border-bottom: 1px solid gainsboro;
 }
 
 .search-area{
@@ -77,6 +77,15 @@ input:focus{
 .logo-text{
     font-size: 1.2rem;
 }
+
+.settings-area{
+    display: flex;
+}
+
+.profile-action-area{
+    display: flex;
+    align-items: center;
+}
 .material-icons{
     align-items: center;
 }
@@ -84,3 +93,45 @@ input:focus{
 .Ini Ini{
     align-items: center;
 }
+
+/* Sidebar Styling */
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px ;
+    margin-top: 5px;
+    color: #5f6368;
+    width: 60px ;
+    overflow-x: hidden;
+}
+.active{
+    background-color: #fef0c3 ;
+    border-radius:50%;
+    color: black;  
+}
+
+.active:hover{
+    background-color: #fef0c3 ; 
+}
+
+.sidebar .sidebar-items{
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+} 
+.sidebar-items .sidebar-text{
+    color: black;
+    font-size: 0.9rem;
+    margin-left: 20px;
+    width: 250px;
+}
+
+.sidebar-items:first-child(1){
+    margin-top: 5px ;
+}
+
+
+/* Main Section Style */

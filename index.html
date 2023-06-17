@@ -6,7 +6,8 @@
     <title>Google Keep Clone | Mongezi Mncube</title>
 
     <link rel="stylesheet" href="./style.css" />
-    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
   </head>
@@ -34,37 +35,74 @@
         <span class="logo-text">Keep</span>
       </div>
       <div class="search-area">
-        <span class="material-icons hover">
-            search
-        </span>
+        <div class="tooltip">
+            <span class="material-icons hover">search</span>
+            <span class="tooltip-text">Search</span>
+        </div>
+        
         <input type="text" placeholder="Search" />
       </div>
 
       <div class="settings-area">
-        <span class="material-icons hover">
-            refresh
-        </span>
-        <span class="material-icons hover">
-            view_agenda
-        </span>
-        <span class="material-icons hover">
-            settings
-            </span>
+        <div class="tooltip">
+            <span class="material-icons hover">refresh</span>
+            <span class="tooltip-text">Refresh</span>
+        </div>
+        
+        <div class="tooltip">
+            <span class="material-icons hover">view_agenda</span>
+            <span class="tooltip-text">Grid View</span>
+        </div>
+        <div class="tooltip">
+            <span class="material-icons hover">settings</span>
+            <span class="tooltip-text">Settings</span>
+        </div>
       </div>
 
       <div class="profile-action-area">
-        <span class="material-icons hover">
-            apps
-        </span>
+        <div class="tooltip">
+            <span class="material-icons hover">apps</span>
+            <span class="tooltip-text">Apps</span>
+        </div>
         
-        <span class="material-icons hover">
-        <span class="material-icons hover">
-            account_circle
-        </span>
-        </span>
+        <div class="tooltip">
+            <span class="material-icons hover">account_circle</span>
+            <span class="tooltip-text">Account</span>
+        </div>
+
       </div>
     </div>
 
+    <div class="main">
+        
+        <div class="sidebar">
+            <div class="sidebar-items">
+                <span class="material-icons hover active">lightbulb</span>
+                <span class="sidebar-text">Notes</span>
+            </div>
+            
+            <div class="sidebar-items">
+                <span class="material-icons hover">notifications</span>
+                <span class="sidebar-text">Reminders</span>
+            </div>
+            
+            <div class="sidebar-items">
+                <span class="material-icons hover">edit</span>
+                <span class="sidebar-text">Edit Notes</span>
+            </div>
+            
+            <div class="sidebar-items">
+                <span class="material-icons hover">archive</span>
+                <span class="sidebar-text">Reminders</span>
+            </div>
+            
+            <div class="sidebar-items">
+                <span class="material-icons hover">delete</span>
+                <span class="sidebar-text">Trash</span>
+            </div>
+            <div class="form-container"></div>
+        </div>
+    </div>
     <script src="./app.js"></script>
   </body>
 </html>
