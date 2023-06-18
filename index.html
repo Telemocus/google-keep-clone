@@ -6,19 +6,23 @@
     <title>Google Keep Clone | Mongezi Mncube</title>
 
     <link rel="stylesheet" href="./style.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="navbar">
       <div class="logo-area">
         <div class="tooltip">
-            <span class="material-icons hover">menu</span>
-            <span class="tooltip-text">Main Menu</span>
+          <span class="material-icons hover">menu</span>
+          <span class="tooltip-text">Main Menu</span>
         </div>
-        
+
         <img
           class="gb_Pc gb_Od"
           src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png"
@@ -36,72 +40,89 @@
       </div>
       <div class="search-area">
         <div class="tooltip">
-            <span class="material-icons hover">search</span>
-            <span class="tooltip-text">Search</span>
+          <span class="material-icons hover">search</span>
+          <span class="tooltip-text">Search</span>
         </div>
-        
+
         <input type="text" placeholder="Search" />
       </div>
 
       <div class="settings-area">
         <div class="tooltip">
-            <span class="material-icons hover">refresh</span>
-            <span class="tooltip-text">Refresh</span>
+          <span class="material-icons hover">refresh</span>
+          <span class="tooltip-text">Refresh</span>
         </div>
-        
+
         <div class="tooltip">
-            <span class="material-icons hover">view_agenda</span>
-            <span class="tooltip-text">Grid View</span>
+          <span class="material-icons hover">view_agenda</span>
+          <span class="tooltip-text">Grid View</span>
         </div>
         <div class="tooltip">
-            <span class="material-icons hover">settings</span>
-            <span class="tooltip-text">Settings</span>
+          <span class="material-icons hover">settings</span>
+          <span class="tooltip-text">Settings</span>
         </div>
       </div>
 
       <div class="profile-action-area">
         <div class="tooltip">
-            <span class="material-icons hover">apps</span>
-            <span class="tooltip-text">Apps</span>
-        </div>
-        
-        <div class="tooltip">
-            <span class="material-icons hover">account_circle</span>
-            <span class="tooltip-text">Account</span>
+          <span class="material-icons hover">apps</span>
+          <span class="tooltip-text">Apps</span>
         </div>
 
+        <div class="tooltip">
+          <span class="material-icons hover">account_circle</span>
+          <span class="tooltip-text">Account</span>
+        </div>
       </div>
     </div>
 
     <div class="main">
-        
-        <div class="sidebar">
-            <div class="sidebar-items">
-                <span class="material-icons hover active">lightbulb</span>
-                <span class="sidebar-text">Notes</span>
-            </div>
-            
-            <div class="sidebar-items">
-                <span class="material-icons hover">notifications</span>
-                <span class="sidebar-text">Reminders</span>
-            </div>
-            
-            <div class="sidebar-items">
-                <span class="material-icons hover">edit</span>
-                <span class="sidebar-text">Edit Notes</span>
-            </div>
-            
-            <div class="sidebar-items">
-                <span class="material-icons hover">archive</span>
-                <span class="sidebar-text">Reminders</span>
-            </div>
-            
-            <div class="sidebar-items">
-                <span class="material-icons hover">delete</span>
-                <span class="sidebar-text">Trash</span>
-            </div>
-            <div class="form-container"></div>
+      <div class="sidebar">
+        <div class="sidebar-items">
+          <span class="material-icons hover active">lightbulb</span>
+          <span class="sidebar-text">Notes</span>
         </div>
+
+        <div class="sidebar-items">
+          <span class="material-icons hover">notifications</span>
+          <span class="sidebar-text">Reminders</span>
+        </div>
+
+        <div class="sidebar-items">
+          <span class="material-icons hover">edit</span>
+          <span class="sidebar-text">Edit Notes</span>
+        </div>
+
+        <div class="sidebar-items">
+          <span class="material-icons hover">archive</span>
+          <span class="sidebar-text">Reminders</span>
+        </div>
+
+        <div class="sidebar-items">
+          <span class="material-icons hover">delete</span>
+          <span class="sidebar-text">Trash</span>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <form>
+          <input class="note-text" type="text" placeholder="Take a note..." />
+          <div class="form-actions">
+            <div class="tooltip">
+              <span class="material-icons hover">check_box</span>
+              <span class="tooltip-text">New List</span>
+            </div>
+            <div class="tooltip">
+              <span class="material-icons hover">brush</span>
+              <span class="tooltip-text">New note with drawing</span>
+            </div>
+            <div class="tooltip">
+              <span class="material-icons hover">image</span>
+              <span class="tooltip-text">New note with image</span>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
     <script src="./app.js"></script>
   </body>
