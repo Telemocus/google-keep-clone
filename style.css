@@ -7,8 +7,8 @@
     box-sizing: border-box;
     font-family: Roboto,sans-serif;
 }
-
-.material-icons{
+.material-icons-outlined{
+    color: #5f6368 ;
     padding: 10px;
 }
 
@@ -80,14 +80,20 @@ input:focus{
 
 .settings-area{
     display: flex;
+
 }
 
 .profile-action-area{
     display: flex;
     align-items: center;
+    padding: 0 4px;
+    padding-left: 30px;
 }
-.material-icons{
+.material-icons-outlined {
     align-items: center;
+    height: 48px;
+    width: 48px;
+    padding: 10px;
 }
 
 /* Sidebar Styling */
@@ -154,7 +160,6 @@ input:focus{
     height: 100%;
     padding:10px;
     margin-left:10px;
-    width: 100%;
     margin-right: 5px;
     padding-left: 10px;
 }
@@ -165,7 +170,6 @@ input:focus{
     height: 100%;
     padding:10px;
     margin-left:10px;
-    width: 100%;
     margin-right: 5px;
     padding-left: 10px;
 }
@@ -189,6 +193,7 @@ input:focus{
 }
 
 .active-form .form-actions{
+    margin: 4px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -196,17 +201,12 @@ input:focus{
 }
 
 .close-btn{
+    margin-right: 15px;
     background: none;
     border: none;
     cursor: pointer;
     font-size: 1rem;
 }
-
-.small-icon{
-    color: rgb(67, 65, 65);
-
-}
-
 
 /* Notes */
 
@@ -216,7 +216,7 @@ input:focus{
 }
 .note{
     background: white;
-    width: 240px;
+    width: 285px;
     margin: 10px;
     border: 1px solid #e0e1e0 ;
     border-radius: 8px;
@@ -230,24 +230,54 @@ input:focus{
 
 .note .text{
     background-color: white;
-    width: 100%;
-    margin: 15px 0 0 15px; 
+    margin: 15px 12px 0 15px; 
+    min-height: 28px;
+    /* padding: 100px 0 0; */
+    
 }
 
 .note-footer{
     background-color:white;
     display: flex;
-    margin-top: 5px;;
+    margin-top: 5px;
     padding: 0;
     justify-content: center;
+    width: 100%;
 }
 
-.note-footer .material-symbols-outlined{
-     color: #5f6368 ;
+.material-icons-outlined.small-icon{
+    font-size: 1.0rem; 
+    align-items: center;
+    padding: 15px;
 }
+
+
 
 .note .check-circle {
     position: absolute;
-    left:-15px;
-    top:-20px
+    left:-12px;
+    top:-12px
+}
+
+
+/* MODAL CONTENT */
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0);
+    height: 100%;
+    width: 100%;
+}
+
+.modal-content{
+    width: 589px;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} 
+
+.open-modal{
+    visibility: hidden;
 }
