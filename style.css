@@ -140,7 +140,8 @@ input:focus{
 /* Main Section Style */
 
 .form-container{
-    /* background: #cb2d2d; */
+    background: white;
+    padding: 5px;
     max-width: 598px;
     align-items: center;
     margin:40px auto;
@@ -182,6 +183,7 @@ input:focus{
 /* Second form styling */
 
 .active-form form {
+    background: white;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -261,13 +263,15 @@ input:focus{
 
 
 /* MODAL CONTENT */
+
 .modal{
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0);
-    height: 100%;
+    background: rgba(0,0,0,.2);
     width: 100%;
+    height: 100%;
+    
 }
 
 .modal-content{
@@ -278,6 +282,3 @@ input:focus{
     transform: translate(-50%,-50%);
 } 
 
-.open-modal{
-    visibility: hidden;
-}
