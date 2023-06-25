@@ -11,11 +11,10 @@
       rel="stylesheet"
     />
     <link
-    href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
     <!-- Icons -->
-    
   </head>
   <body>
     <div class="navbar">
@@ -45,7 +44,7 @@
           <span class="material-icons-outlined hover">search</span>
           <span class="tooltip-text">Search</span>
         </div>
-        
+
         <input type="text" placeholder="Search" />
       </div>
 
@@ -106,7 +105,7 @@
         </div>
       </div>
 
-      <div class="form-container">
+      <div class="form-container inactive-form">
         <form>
           <input class="note-text" type="text" placeholder="Take a note..." />
           <div class="form-actions">
@@ -124,14 +123,14 @@
             </div>
           </div>
         </form>
-      </div
-     
+      </div>
+
       <!-- Second Form -->
 
       <div class="form-container active-form">
         <form>
-          <input type="text" class="note-title" placeholder="Title">
-          <input class="note-text" type="text" placeholder="Take a note..." />
+          <input id="note-title" type="text" class="note-title" placeholder="Title" />
+          <input id="note-text" class="note-text" type="text" placeholder="Take a note..." />
           <div class="form-actions">
             <div class="icons">
               <div class="tooltip">
@@ -147,7 +146,7 @@
                 <span class="tooltip-text">Background Options</span>
               </div>
               <div class="tooltip">
-                <span class="material-icons-outlined hover ">image</span>
+                <span class="material-icons-outlined hover">image</span>
                 <span class="tooltip-text">Add Image</span>
               </div>
               <div class="tooltip">
@@ -166,7 +165,6 @@
                 <span class="material-icons-outlined hover">redo</span>
                 <span class="tooltip-text">Redo</span>
               </div>
-              
             </div>
             <button class="close-btn">Close</button>
           </div>
@@ -180,30 +178,41 @@
           <div class="text">Note</div>
           <div class="note-footer">
             <div class="tooltip">
-              <span class="material-icons-outlined hover small-icon">add_alert</span>
+              <span class="material-icons-outlined hover small-icon"
+                >add_alert</span
+              >
               <span class="tooltip-text">Remind Me</span>
             </div>
             <div class="tooltip">
-              <span class="material-icons-outlined hover small-icon">person_add</span>
+              <span class="material-icons-outlined hover small-icon"
+                >person_add</span
+              >
               <span class="tooltip-text">Collaborator</span>
             </div>
             <div class="tooltip">
-              <span class="material-icons-outlined hover small-icon">palette</span>
+              <span class="material-icons-outlined hover small-icon"
+                >palette</span
+              >
               <span class="tooltip-text">Background Options</span>
             </div>
             <div class="tooltip">
-              <span class="material-icons-outlined hover small-icon">image</span>
+              <span class="material-icons-outlined hover small-icon"
+                >image</span
+              >
               <span class="tooltip-text">Add Image</span>
             </div>
             <div class="tooltip">
-              <span class="material-icons-outlined hover small-icon">archive</span>
+              <span class="material-icons-outlined hover small-icon"
+                >archive</span
+              >
               <span class="tooltip-text">Archive</span>
             </div>
             <div class="tooltip">
-              <span class="material-icons-outlined hover small-icon">more_vert</span>
+              <span class="material-icons-outlined hover small-icon"
+                >more_vert</span
+              >
               <span class="tooltip-text">More</span>
             </div>
-            
           </div>
         </div>
       </div>
@@ -211,8 +220,12 @@
         <div class="modal-content">
           <div class="form-container active-form">
             <form>
-              <input type="text" class="note-title" placeholder="Title">
-              <input class="note-text" type="text" placeholder="Take a note..." />
+              <input type="text" class="note-title" placeholder="Title" />
+              <input
+                class="note-text"
+                type="text"
+                placeholder="Take a note..."
+              />
               <div class="form-actions">
                 <div class="icons">
                   <div class="tooltip">
@@ -220,7 +233,9 @@
                     <span class="tooltip-text">Remind Me</span>
                   </div>
                   <div class="tooltip">
-                    <span class="material-icons-outlined hover">person_add</span>
+                    <span class="material-icons-outlined hover"
+                      >person_add</span
+                    >
                     <span class="tooltip-text">Collaborator</span>
                   </div>
                   <div class="tooltip">
@@ -228,7 +243,7 @@
                     <span class="tooltip-text">Background Options</span>
                   </div>
                   <div class="tooltip">
-                    <span class="material-icons-outlined hover ">image</span>
+                    <span class="material-icons-outlined hover">image</span>
                     <span class="tooltip-text">Add Image</span>
                   </div>
                   <div class="tooltip">
@@ -247,7 +262,6 @@
                     <span class="material-icons-outlined hover">redo</span>
                     <span class="tooltip-text">Redo</span>
                   </div>
-                  
                 </div>
                 <button class="close-btn">Close</button>
               </div>
@@ -255,7 +269,7 @@
           </div>
         </div>
       </div>
-      
+    </div>
 
     <script src="./app.js"></script>
   </body>

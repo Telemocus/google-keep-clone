@@ -9,13 +9,51 @@ class Note{
    }
    
    class App{
-   
        constructor(){
            this.notes = [];
 
-           alert("constructor is running")
+           this.$activeForm = document.querySelector(".active-form");
+           this.$inactiveForm = document.querySelector(".inactive-form");
+           this.$noteTitle = document.querySelector(".note-title");
+           this.$noteText = document.querySelector(".note-text");
+           this.$noteTitle = document.querySelector("#note-title");
+           this.$noteText = document.querySelector("#note-text");
+
+           this.addEventlisteners();
        }
-   
+       
+       addEventlisteners(){
+            document.body.addEventListener("click", (event) => {
+            this.handleFormClick(event);
+        })
+    }
+
+        handleFormClick(event){
+           const isActiveClickedOn = this.$activeForm.contains(event.target);
+           const isInactiveClickedOn = this.$inactiveForm.contains(event.target);
+           const title = this.$noteTitle.value;
+           const text = this.$noteText.value;
+
+           if(isInactiveClickedOn){
+            this.openActiveForm();
+           }
+           else if(!isInactiveClickedOn && !isActiveClickedOn){
+            this.closeInactiveForm();
+           }
+
+
+        }
+
+        openActiveForm(){
+            this.$inactiveForm.style.display = "none";
+            this.$activeForm.style.display = "block"; 
+            this.$noteText.focus();
+        }
+        closeInactiveForm(){
+            this.$inactiveForm.style.display = "block";
+            this.$activeForm.style.display = "none"; 
+        }
+
        addNote({ title,text}){
            const newNote = new Note(id,title,text);
            this.notes = [...this.notes, newNote]; 
