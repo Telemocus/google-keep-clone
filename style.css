@@ -10,7 +10,9 @@
     color: #5f6368 ;
     padding: 10px;
 }
-
+.boxicons{
+    width: 25px;
+}
 .hover:hover{
     background: #f1f3f4;
     color: black;
