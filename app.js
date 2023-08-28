@@ -27,7 +27,6 @@ class Note{
             this.handleFormClick(event);
         })
     }
-
         handleFormClick(event){
            const isActiveClickedOn = this.$activeForm.contains(event.target);
            const isInactiveClickedOn = this.$inactiveForm.contains(event.target);
@@ -38,6 +37,7 @@ class Note{
             this.openActiveForm();
            }
            else if(!isInactiveClickedOn && !isActiveClickedOn){
+            this.addNote({title,text})
             this.closeInactiveForm();
            }
 
@@ -52,11 +52,15 @@ class Note{
         closeInactiveForm(){
             this.$inactiveForm.style.display = "block";
             this.$activeForm.style.display = "none"; 
+            this.$noteText.value = "";
+            this.$noteTitle.value = "";
         }
 
        addNote({ title,text}){
-           const newNote = new Note(id,title,text);
+           const newNote = new Note(cuid(),title,text);
            this.notes = [...this.notes, newNote]; 
+           this.displayNotes()
+           
        }
    
        editNote(id, { text, title }){
