@@ -4,5 +4,6 @@
         "Mncube",
         "Mocus",
         "Mongezi"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
